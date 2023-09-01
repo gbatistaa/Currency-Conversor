@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="divprincipal">
+        <img src="./logo.svg" alt="logo" id="logo">
+        <p id="descriptiion">
+            It's very simple to use. Just pick two currencies of your preference,
+            and you'll see how much one is worth to the other. Try it now!
+        </p>
+        <label for="c1"></label>
+        <div id="inputs">
+            <p id="inputinfo">
+                Pick two currencies of your preference
+                (only codes available. Ex: USD, BRL):
+            </p>
+            <form id="input">
+                <section class="namevalue">
+                    <input type="text" name="currency1" id="currency1" class="coins" placeholder="Currency 1" autocomplete="off">
+                    <input type="text" name="value1" id="value1" class="coins" placeholder="Value 1"autocomplete="off">
+                </section>
+                <section class="namevalue">
+                    <input type="text" name="currency2" id="currency2" class="coins" placeholder="Currency 2"autocomplete="off">
+                </section>
+                <input type="submit" value="Confirm" id="submit">
+            </form>
+            <div id="result-box">
+                <p id="result-element"></p>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js" defer></script>
+</body>
+</html>

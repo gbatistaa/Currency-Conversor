@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Play';
+    src: url(./PlayfairDisplay-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Play';
+    color: aliceblue;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,0,110);
+    background: linear-gradient(180deg, rgba(0,0,110,1) 0%, rgba(134,47,184,1) 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+    position: relative;
+    bottom: 3em;
+}
+#divprincipal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#logo{
+    position: relative;
+    height: auto;
+    max-width: 600px;
+}
+#inputs{
+    padding: 25px;
+    position: relative;
+    top: 2rem;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(35, 35, 99);
+    font-family: 'Playfair Display';
+    border-radius: 10px;
+}
+form{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    column-count: 2;
+    justify-content: center;
+    align-items: center;
+}
+.namevalue{
+    display: flex;
+    column-gap: 1rem;
+}
+.coins{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-top: 2rem;
+    height: 18px;
+    width: 100%;
+    box-shadow: 0 0 0 0;
+    border: 0;
+    outline: 0;
+    border: none;
+    background-color: rgb(40, 40, 110);
+    appearance: none;
+}
+#inputinfo{
+    text-align: center;
+}
+#submit{
+    background-color: rgb(42, 78, 152);
+    border-radius: 20px;
+    border: 0;
+    margin-top: 1.2rem;
+    height: 30px;
+    width: 110px;
+    transition: 0.15s ease-out;
+    margin-bottom: 15px;
+}
+#submit:hover{
+    background-color: rgba(42, 79, 152, 0.619);
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 25%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    75% {
+        opacity: 75%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+#result-box{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 80%;
+    background-color: rgb(42, 78, 152);
+}
